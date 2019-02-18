@@ -3,10 +3,8 @@
 (ns aero.core
   #?(:clj (:require
            [clojure.edn :as edn]
-           [clojure.string :refer [trim]]
            [clojure.walk :refer [walk postwalk]]
            [clojure.java.io :as io]
-           [clojure.java.shell :as sh]
            [aero.vendor.dependency.v0v2v0.com.stuartsierra.dependency :as dep]))
   #?(:clj (:import (java.io StringReader)))
   #?(:cljs (:require [cljs.tools.reader :as edn]
